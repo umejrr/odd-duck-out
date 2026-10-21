@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Button from "./button";
 import Link from "next/link";
+import Rules from "./rules";
 
 export default function Home() {
   return (
@@ -20,9 +21,7 @@ export default function Home() {
           or
           <Button width="460"><Link className="block w-full h-full px-8 py-1" href={'/login'}>Log In</Link></Button>
         </div>
-        <Link href={'/rules'} className="absolute bottom-2 right-2 border-b-5">
-          RULES
-        </Link>
+        <Rules></Rules>
       </main>
     </div>
   );
